@@ -7,10 +7,15 @@
  # This is the file you should end up editing. 
  
 def bakery_num(num_of_people, fav_food)
-  my_list = {"pie" => 8, "cake" => 6, "cookie" => 1}
+  my_list = {"pie" => 8, "cake" => 6, "cookie" => 1 "pudding" => 2, "bundt cake" => 4 "mega cupcakes" => 3}
   pie_qty = 0
   cake_qty = 0
   cookie_qty = 0
+  pudding = 0
+  pudding = 0
+  bundt_cake = 0
+  mega_cupcakes =0
+  
 # The def bakery_num is the method and the arguments are the num_of_people and fav_food which is available within the method. 
 # My_list is a hash that is setting a key for each item and associating a value with them
 #The local variables are defiend by the cake, pie, and cookie qty
@@ -55,7 +60,7 @@ def bakery_num(num_of_people, fav_food)
 # Checks and ensures that there is not a remainder left for the value of the cake key    
     else
     cookie_qty = num_of_people
-# States that the amount of cookies is equal to the number of people    
+# States that the amount of cookies is equal to the number of people 
     num_of_people = 0
 # Gives the num of people a local variable of 0    
     end
@@ -77,7 +82,7 @@ p bakery_num(24, "cookie") == "You need to make 24 cookie(s)."
 p bakery_num(4, "pie") == "You need to make 0 pie(s), 0 cake(s), and 4 cookie(s)."
 p bakery_num(130, "pie") == "You need to make 16 pie(s), 0 cake(s), and 2 cookie(s)."
 # p bakery_num(3, "apples") # this will raise an ArgumentError
-
+p bakery_num(6, "mega cupcakes") =="You need to make 0 pie(s), 0 cake(s), 0 pudding(s), 0 bundt cake(s) and 2 mega cupcake(s)."
 # You SHOULD change this driver code. Why? Because it doesn't make sense.
 p bakery_num(41, "cake") == "You need to make 5 pie(s), 0 cake(s), and 1 cookie(s)." # WHAAAAAT? I thought I said I wanted cake!
  
